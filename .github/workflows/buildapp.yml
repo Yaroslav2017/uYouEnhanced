@@ -179,9 +179,4 @@ jobs:
           name: v${{ env.YOUTUBE_VERSION }}-${{ env.UYOU_VERSION }}-(${{ github.run_number }})
           files: main/packages/*.ipa
           draft: true
-- name: Upload IPA artifact
-  uses: actions/upload-artifact@v4
-  with:
-    name: uYouEnhanced-ipa
-    path: |
-      **/*.ipa
+
